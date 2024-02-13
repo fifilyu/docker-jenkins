@@ -53,7 +53,7 @@ gid=$(docker exec -it jenkins bash -c 'id -g jenkins' | tr -d '\r')
 sudo chown -R ${uid}:${gid} /data/jenkins
 
 # 确认重置效果
-ls -dl /data/jenkins && ls -al /data/jenkins
+ls -dln /data/jenkins && ls -al /data/jenkins
 ```
 
 ### 3.4 重启容器
