@@ -14,7 +14,7 @@ RUN rpm --import /tmp/jenkins.io-2023.key
 
 RUN dnf makecache
 RUN dnf install -y fontconfig java-17-openjdk
-RUN dnf install -y jenkins
+RUN dnf install -y jenkins git
 RUN usermod -s /bin/bash jenkins
 
 RUN mkdir -p /var/log/jenkins /var/lib/jenkins/.jenkins/war
